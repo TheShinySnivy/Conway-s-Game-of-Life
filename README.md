@@ -12,3 +12,6 @@ Conway's Game of Life Application
     6. `git commit -m "2nd commit to Github"`
     7. `git remote add origin https://github.com/TheShinySnivy/Conway-s-Game-of-Life.git`
     8. `git push -u origin master`
+    9. `git add .`
+    10. `git commit -m "3rd commit to Github"`
+    11. `git push -u origin master`
