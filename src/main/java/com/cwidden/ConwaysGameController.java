@@ -20,8 +20,10 @@ public class ConwaysGameController {
 
     private ArrayList<Point> pointArrayList;
 
-    private final int X_DIMENSION = 100;
-    private final int Y_DIMENSION = 100;
+    private final int X_DIMENSION = 300;
+    private final int Y_DIMENSION = 180;
+
+    private final boolean CONWAYS_GAME = true;
 
     private boolean[][] cellArray;
     private boolean[][] newCellArray;
@@ -48,10 +50,14 @@ public class ConwaysGameController {
         drawingPanel.setLocation(0,0);
         drawingPanel.setSize(5 * X_DIMENSION, 5 * Y_DIMENSION);
         drawingPanel.setPreferredSize(new Dimension(5 * X_DIMENSION, 5 * Y_DIMENSION));
+        drawingPanel.setMaximumSize(new Dimension(5 * X_DIMENSION, 5 * Y_DIMENSION));
         mainFrame.build(drawingPanel);
 
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.pack();
+
+        mainFrame.setMinimumSize(mainFrame.getSize());
+
         mainFrame.setVisible(true);
     }
 
@@ -63,6 +69,13 @@ public class ConwaysGameController {
             timer.scheduleAtFixedRate(task, 0, 500);
 
             isStarted = true;
+        }
+    }
+
+    public void step() {
+        if (!isStarted) {
+            Helper helper = new Helper();
+            helper.run();
         }
     }
 
@@ -136,13 +149,18 @@ public class ConwaysGameController {
                         if (w < 0 || h < 0 || w >= X_DIMENSION || h >= Y_DIMENSION) {
                             continue;
                         }
+                        if (w == x && h == y && CONWAYS_GAME) {
+                            continue;
+                        }
                         if (cellArray[w][h]) {
                             neighborCount++;
                         }
                     }
                 }
 
-                neighborCount = neighborCount - 1;
+                if (!CONWAYS_GAME) {
+                    neighborCount = neighborCount - 1;
+                }
 
                 switch (neighborCount) {
                     case 0:
@@ -154,6 +172,11 @@ public class ConwaysGameController {
                     case 2:
                         if (cellArray[x][y]) {
                             newCellArray[x][y] = true;
+                        } else if (CONWAYS_GAME){
+                            newCellArray[x][y] = false;
+                        }
+                        if (CONWAYS_GAME) {
+                            break;
                         }
                     case 3:
                         newCellArray[x][y] = true;

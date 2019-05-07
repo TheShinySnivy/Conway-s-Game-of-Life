@@ -2,6 +2,11 @@
 Conway's Game of Life Application
 
 ## Development Journal
+### 5/7/2019
+1. #### Git Commands
+    1. `git add .`
+    2. `git commit -m "4th commit to Github" -m "Fixed bugs in logic. Prevented drawing panel from resizing."`
+    3. `git push -u origin master`
 ### 5/6/2019
 1. #### Git Commands
     1. `git init`

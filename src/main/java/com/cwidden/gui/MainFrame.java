@@ -13,6 +13,7 @@ public class MainFrame extends JFrame implements ActionListener {
     private JButton startButton;
     private JButton stopButton;
     private JButton clearButton;
+    private JButton stepButton;
 
     private ConwaysGameController conwaysGameController;
 
@@ -61,12 +62,21 @@ public class MainFrame extends JFrame implements ActionListener {
         clearButton = new JButton("Clear");
         clearButton.addActionListener(this);
 
+        stepButton = new JButton("Step");
+        stepButton.addActionListener(this);
+
         buttonPane.add(startButton);
         buttonPane.add(stopButton);
         buttonPane.add(clearButton);
+        buttonPane.add(stepButton);
 
+        FlowLayout flowLayout = new FlowLayout();
+        flowLayout.setVgap(0);
+        flowLayout.setHgap(0);
+        JPanel drawingPanelContainer = new JPanel(flowLayout);
+        drawingPanelContainer.add(drawingPanel);
 
-        this.getContentPane().add(drawingPanel, BorderLayout.CENTER);
+        this.getContentPane().add(drawingPanelContainer, BorderLayout.WEST);
         this.getContentPane().add(informationPane, BorderLayout.SOUTH);
         this.getContentPane().add(buttonPane, BorderLayout.EAST);
     }
@@ -84,6 +94,9 @@ public class MainFrame extends JFrame implements ActionListener {
         }
         if (e.getSource().equals(clearButton)) {
             conwaysGameController.clearCells();
+        }
+        if (e.getSource().equals(stepButton)) {
+            conwaysGameController.step();
         }
     }
 }

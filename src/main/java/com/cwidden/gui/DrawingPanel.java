@@ -35,6 +35,9 @@ public class DrawingPanel extends JPanel implements MouseListener {
 
         //this.setSize(width, height);
         this.setMaximumSize(new Dimension(width, height));
+        this.setSize(width, height);
+        this.setPreferredSize(new Dimension(width, height));
+        this.setMaximumSize(new Dimension(width, height));
         setBackground(Color.BLACK);
 
         addMouseListener(this);
