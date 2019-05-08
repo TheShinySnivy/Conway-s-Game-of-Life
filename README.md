@@ -2,6 +2,11 @@
 Conway's Game of Life Application
 
 ## Development Journal
+### 5/8/2019
+1. #### Git Commands
+    1. `git add .`
+    2. `git commit -m "5th commit to Github"`
+    3. `git push -u origin master`
 ### 5/7/2019
 1. #### Git Commands
     1. `git add .`

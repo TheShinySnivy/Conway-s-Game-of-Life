@@ -13,6 +13,7 @@ public class ConwaysGameController {
 
     private Timer timer;
     private MainFrame mainFrame;
+    private StartDialog startDialog;
     private DrawingPanel drawingPanel;
 
     private int mouseX;
@@ -44,6 +45,12 @@ public class ConwaysGameController {
     }
 
     public void buildGui(){
+
+        startDialog = new StartDialog();
+
+        startDialog.pack();
+        startDialog.setVisible(true);
+
         mainFrame = new MainFrame();
         //mainFrame.setLayout(new FlowLayout());
         drawingPanel = new DrawingPanel(5 * X_DIMENSION, 5 * Y_DIMENSION);
@@ -59,6 +66,10 @@ public class ConwaysGameController {
         mainFrame.setMinimumSize(mainFrame.getSize());
 
         mainFrame.setVisible(true);
+    }
+
+    public boolean buildFrame(String xDimension, String yDimension) {
+        return false;
     }
 
     public void startTimer() {
