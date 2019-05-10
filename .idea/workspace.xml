@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b686ea1e-9ad5-49a0-89d0-756aebcc463b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/conwaysgame_jar/conwaysgame.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/conwaysgame_jar/conwaysgame.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController$Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController$Helper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController$MouseHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController$MouseHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwidden/ConwaysGameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cwidden/gui/StartDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cwidden/gui/StartDialog.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,13 +29,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -44,16 +47,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+            <state relative-caret-position="381">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2077#2078#0" expanded="true" />
-                <element signature="e#2104#2105#0" expanded="true" />
+                <element signature="e#3123#3124#0" expanded="true" />
+                <element signature="e#3157#3158#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="555" selection-start-line="555" selection-end-line="555" />
             </state>
           </provider>
         </entry>
@@ -74,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/DrawingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="459">
               <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="1513">
+              <caret line="91" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="241">
+              <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,6 +132,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>startt</find>
+      <find>timer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,12 +148,12 @@
         <option value="$PROJECT_DIR$/src/test/java/ConwaysGameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/DrawingPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cwidden/DrawingPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cwidden/gui/DrawingPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cwidden/gui/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java" />
       </list>
     </option>
   </component>
@@ -158,8 +171,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="301" />
     <option name="y" value="38" />
-    <option name="width" value="501" />
-    <option name="height" value="688" />
+    <option name="width" value="1547" />
+    <option name="height" value="918" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,6 +180,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="conwaysgame" type="58d84e3e:PackageViewProjectNode" />
+              <item name="conwaysgame" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="conwaysgame" type="58d84e3e:PackageViewProjectNode" />
+              <item name="conwaysgame" type="616d4139:PackageViewModuleNode" />
+              <item name="gui" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,26 +248,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="conwaysgame" type="58d84e3e:PackageViewProjectNode" />
-              <item name="conwaysgame" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="conwaysgame" type="58d84e3e:PackageViewProjectNode" />
-              <item name="conwaysgame" type="616d4139:PackageViewModuleNode" />
-              <item name="gui" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557355394285" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557355464082" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -323,7 +336,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2750533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28144988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -333,15 +346,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4792111" visible="true" weight="0.20260021" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.6132178" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.45895523" visible="true" weight="0.39219934" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5948827" weight="0.27193934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5207889" side_tool="true" visible="true" weight="0.20260021" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48187634" weight="0.3261105" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4989339" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49573562" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5410448" side_tool="true" visible="true" weight="0.39219934" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.46695095" weight="0.32286024" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -355,10 +368,23 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
-        <watch expression="mainFrame.layoutMgr" />
-        <watch expression="drawingPanelContainer.y" />
+        <watch expression="buildButton" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>buildButton</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mainFrame.layoutMgr</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/javax/swing/JPanel.java">
@@ -390,20 +416,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -420,7 +442,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/DrawingPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="459">
           <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -428,10 +450,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="555" selection-start-line="555" selection-end-line="555" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="1513">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -440,33 +486,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/ConwaysGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        <state relative-caret-position="381">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+            <element signature="e#3157#3158#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cwidden/gui/StartDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

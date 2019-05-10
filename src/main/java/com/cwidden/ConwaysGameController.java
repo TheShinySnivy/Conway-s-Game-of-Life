@@ -16,15 +16,25 @@ public class ConwaysGameController {
     private StartDialog startDialog;
     private DrawingPanel drawingPanel;
 
+    private Dimension maxScreenSize;
+
     private int mouseX;
     private int mouseY;
 
     private ArrayList<Point> pointArrayList;
 
-    private final int X_DIMENSION = 300;
-    private final int Y_DIMENSION = 180;
+    private int xDimension;
+    private int yDimension;
 
-    private final boolean CONWAYS_GAME = true;
+    private Dimension maxDimension;
+
+    //private final int X_DIMENSION = 300;
+    //private final int Y_DIMENSION = 180;
+
+    private final int EXTRA_WIDTH = 60;
+    private final int EXTRA_HEIGHT = 90;
+
+    private  boolean conwaysGame = true;
 
     private boolean[][] cellArray;
     private boolean[][] newCellArray;
@@ -38,10 +48,11 @@ public class ConwaysGameController {
 
     private ConwaysGameController() {
         pointArrayList = new ArrayList<Point>();
-        cellArray = new boolean[X_DIMENSION][Y_DIMENSION];
-        newCellArray = new boolean[X_DIMENSION][Y_DIMENSION];
-        cellNeighborsArray = new int[X_DIMENSION][Y_DIMENSION];
         isStarted = false;
+
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        maxDimension = new Dimension(screenSize.width - EXTRA_WIDTH, screenSize.height - EXTRA_HEIGHT);
+
     }
 
     public void buildGui(){
@@ -51,13 +62,36 @@ public class ConwaysGameController {
         startDialog.pack();
         startDialog.setVisible(true);
 
+
+    }
+
+    public boolean buildFrame(String xString, String yString, boolean conwaysGameOn) {
+        try {
+            xDimension = 5 * Integer.parseInt(xString);
+            yDimension = 5 * Integer.parseInt(yString);
+            if (xDimension > maxDimension.width || yDimension > maxDimension.height || xDimension < 5 || yDimension < 5) {
+                return false;
+            } else {
+                conwaysGame = conwaysGameOn;
+                cellArray = new boolean[xDimension][yDimension];
+                newCellArray = new boolean[xDimension][yDimension];
+                cellNeighborsArray = new int[xDimension][yDimension];
+                buildFrame(xDimension, yDimension);
+                return true;
+            }
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
+    private void buildFrame(int xDimension, int yDimension) {
         mainFrame = new MainFrame();
         //mainFrame.setLayout(new FlowLayout());
-        drawingPanel = new DrawingPanel(5 * X_DIMENSION, 5 * Y_DIMENSION);
+        drawingPanel = new DrawingPanel(xDimension, yDimension);
         drawingPanel.setLocation(0,0);
-        drawingPanel.setSize(5 * X_DIMENSION, 5 * Y_DIMENSION);
-        drawingPanel.setPreferredSize(new Dimension(5 * X_DIMENSION, 5 * Y_DIMENSION));
-        drawingPanel.setMaximumSize(new Dimension(5 * X_DIMENSION, 5 * Y_DIMENSION));
+        drawingPanel.setSize(xDimension, yDimension);
+        drawingPanel.setPreferredSize(new Dimension(xDimension, yDimension));
+        drawingPanel.setMaximumSize(new Dimension(xDimension, yDimension));
         mainFrame.build(drawingPanel);
 
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -66,10 +100,12 @@ public class ConwaysGameController {
         mainFrame.setMinimumSize(mainFrame.getSize());
 
         mainFrame.setVisible(true);
+
+        startMouseLocationTimer();
     }
 
-    public boolean buildFrame(String xDimension, String yDimension) {
-        return false;
+    public Dimension getMaxDimension() {
+        return maxDimension;
     }
 
     public void startTimer() {
@@ -137,8 +173,8 @@ public class ConwaysGameController {
     }
 
     public void clearCells() {
-        for (int x = 0; x < X_DIMENSION; x++) {
-            for (int y = 0; y < Y_DIMENSION; y++) {
+        for (int x = 0; x < xDimension; x++) {
+            for (int y = 0; y < yDimension; y++) {
                 cellArray[x][y] = false;
             }
         }
@@ -148,8 +184,8 @@ public class ConwaysGameController {
 
     private void updateNeighbors() {
 
-        for (int x = 0; x < X_DIMENSION; x++) {
-            for (int y = 0; y < Y_DIMENSION; y++) {
+        for (int x = 0; x < xDimension; x++) {
+            for (int y = 0; y < yDimension; y++) {
 
                 int neighborCount = 0;
 
@@ -157,10 +193,10 @@ public class ConwaysGameController {
                     for (int j = -1; j <= 1; j++) {
                         int w = x + i;
                         int h = y + j;
-                        if (w < 0 || h < 0 || w >= X_DIMENSION || h >= Y_DIMENSION) {
+                        if (w < 0 || h < 0 || w >= xDimension || h >= yDimension) {
                             continue;
                         }
-                        if (w == x && h == y && CONWAYS_GAME) {
+                        if (w == x && h == y && conwaysGame) {
                             continue;
                         }
                         if (cellArray[w][h]) {
@@ -169,7 +205,7 @@ public class ConwaysGameController {
                     }
                 }
 
-                if (!CONWAYS_GAME) {
+                if (!conwaysGame) {
                     neighborCount = neighborCount - 1;
                 }
 
@@ -183,10 +219,10 @@ public class ConwaysGameController {
                     case 2:
                         if (cellArray[x][y]) {
                             newCellArray[x][y] = true;
-                        } else if (CONWAYS_GAME){
+                        } else if (conwaysGame){
                             newCellArray[x][y] = false;
                         }
-                        if (CONWAYS_GAME) {
+                        if (conwaysGame) {
                             break;
                         }
                     case 3:
@@ -198,8 +234,8 @@ public class ConwaysGameController {
             }
         }
 
-        for (int x = 0; x < X_DIMENSION; x++) {
-            for (int y = 0; y < Y_DIMENSION; y++) {
+        for (int x = 0; x < xDimension; x++) {
+            for (int y = 0; y < yDimension; y++) {
                 cellArray[x][y] = newCellArray[x][y];
             }
         }

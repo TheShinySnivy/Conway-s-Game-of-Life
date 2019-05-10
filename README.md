@@ -2,6 +2,11 @@
 Conway's Game of Life Application
 
 ## Development Journal
+### 5/10/2019
+1. #### Git Commands
+    1. `git add .`
+    2. `git commit -m "6th commit to Github" -m "Added custom size, added toggle for alternate rules."`
+    3. `git push -u origin master`
 ### 5/8/2019
 1. #### Git Commands
     1. `git add .`
